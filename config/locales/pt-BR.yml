@@ -1,0 +1,76 @@
+pt-BR:
+  errors:
+    messages:
+      unauthorized: "Não autorizado"
+
+  authentication:
+    errors:
+      unauthorized: "Você não está autorizado a acessar este recurso"
+      invalid_credentials: "Email ou senha inválidos"
+      account_locked: "Sua conta está bloqueada"
+      session_expired: "Sua sessão expirou, por favor faça login novamente"
+      token_expired: "Token expirado"
+      invalid_token: "Token inválido"
+
+  success:
+    created: "%{resource} criado com sucesso"
+    updated: "%{resource} atualizado com sucesso"
+    deleted: "%{resource} removido com sucesso"
+
+  resources:
+    user: "Usuário"
+    session: "Sessão"
+    profile: "Perfil"
+    
+  activerecord:
+    errors:
+      messages:
+        record_invalid: "Validação falhou: %{errors}"
+        restrict_dependent_destroy:
+          has_one: "Não é possível excluir o registro pois existe um %{record} dependente"
+          has_many: "Não é possível excluir o registro pois existem %{record} dependentes"
+    models:
+      user: "Usuário"
+      session: "Sessão"
+    attributes:
+      user:
+        name: "Nome"
+        email_address: "E-mail"
+        password: "Senha"
+        password_confirmation: "Confirmação de senha"
+      session:
+        token: "Token"
+        expires_at: "Expira em"
+
+  validations:
+    presence: "%{attribute} não pode ficar em branco"
+    uniqueness: "%{attribute} já está em uso"
+    format: "%{attribute} possui formato inválido"
+    length:
+      too_short: "%{attribute} é muito curto (mínimo: %{count} caracteres)"
+      too_long: "%{attribute} é muito longo (máximo: %{count} caracteres)"
+
+  date:
+    formats:
+      default: "%d/%m/%Y"
+      short: "%d de %B"
+      long: "%d de %B de %Y"
+    day_names: [Domingo, Segunda-feira, Terça-feira, Quarta-feira, Quinta-feira, Sexta-feira, Sábado]
+    abbr_day_names: [Dom, Seg, Ter, Qua, Qui, Sex, Sáb]
+    month_names: [~, Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
+    abbr_month_names: [~, Jan, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Set, Out, Nov, Dez]
+    order: [day, month, year]
+
+  time:
+    formats:
+      default: "%d/%m/%Y %H:%M"
+      short: "%d/%m, %H:%M"
+      long: "%d de %B de %Y, %H:%M"
+    am: "am"
+    pm: "pm"
+
+  # Mailers
+  mailers:
+    password_reset:
+      subject: "Redefinição de senha"
+    

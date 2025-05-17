@@ -1,0 +1,34 @@
+exclude:
+  - Bed 
+
+all:
+  title: "SGHSS API Class Diagram"
+  show_foreign_keys: true
+  show_associations: true
+  show_inheritance: true
+  show_abstract: true
+  show_private: false
+  show_protected: false
+  show_public: true
+  show_methods: true
+  show_attributes: true
+  show_validation: true
+  show_enum: true
+  show_audited: true
+  show_polymorphic: true
+  show_through: true
+  show_join: true
+  show_habtm: true
+  show_belongs_to: true
+  show_has_many: true
+  show_has_one: true
+  show_has_and_belongs_to_many: true
+  show_has_many_through: true
+  show_has_one_through: true
+  show_has_many_and_belongs_to_many: true
+  show_has_many_through_association: true
+  show_has_one_through_association: true
+  show_has_many_and_belongs_to_many_association: true
+  show_has_many_through_association_through: true
+  show_has_one_through_association_through: true
+  show_has_many_and_belongs_to_many_association_through: true 
